@@ -1,0 +1,270 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+	
+// ≥1200px
++media-breakpoint-down(lg)
+	.nexttalks
+		&_block
+			padding: 125px 0
+			&__img
+				img
+					width: 80%
+			&__content
+				&-title
+					font-size: 42px
+				&-date
+					font-size: 16px
+// ≥992px
++media-breakpoint-down(md)
+	.nexttalks
+		&_block
+			padding: 85px 0
+			&__img
+				img
+					width: 70%
+			&__content
+				&-title
+					font-size: 30px
+				&-date
+					font-size: 14px
+// ≥768px
++media-breakpoint-down(sm)
+	.intro
+		padding-top: 100px
+		&_logo
+			margin-top: -100px
+			img
+				width: 20%
+		&_info
+			margin-top: 0
+			text-align: center
+			&__img
+				margin-left: 0
+				img
+					width: 60%
+			&__text
+				margin-left: 0
+				width: 100%
+				padding: 0px 30px
+				text-align: left
+		&_turnbtn
+			position: relative
+			top: 0
+			left: 0
+			margin: 0px auto
+			margin-top: 20px
+			img
+				width: 50px
+		&_whitecross
+			&__2
+				top: 40%
+				left: 10%
+	// intro
+	// next talks
+	.nexttalks
+		margin-top: 50px
+		padding-bottom: 80px
+		&_block
+			width: 300px
+			padding: 100px 0
+			&__img
+				img
+					width: 80%
+			&__content
+				&-title
+					font-size: 30px
+				&-date
+					font-size: 14px
+		&_speaker
+			// &__img
+			// 	img
+			// 		width: 80%
+			&__1
+				margin-top: 20px
+			&__2
+				margin-top: 20px
+				&__img
+					width: 100%
+			&__3
+				margin-top: 20px
+			&__4
+				margin-top: 20px
+			&__5
+				margin-top: 20px
+				margin-left: auto
+				width: 100%
+// ≥576px
++media-breakpoint-down(xs)
+	// intro
+	.intro
+		padding-top: 100px
+		&_logo
+			margin-top: -100px
+			img
+				width: 20%
+		&_info
+			margin-top: 0
+			text-align: center
+			&__img
+				margin-left: 0
+				img
+					width: 60%
+			&__text
+				margin-left: 0
+				width: 100%
+				padding: 0px 30px
+				text-align: left
+		&_turnbtn
+			position: relative
+			top: 0
+			left: 0
+			margin: 0px auto
+			margin-top: 20px
+			img
+				width: 50px
+		&_whitecross
+			&__2
+				top: 40%
+				left: 10%
+	// intro
+	// next talks
+	.nexttalks
+		padding-bottom: 80px
+		&_block
+			padding: 95px 0
+			&__img
+				img
+					width: 80%
+			&__content
+				&-title
+					font-size: 30px
+				&-date
+					font-size: 14px
+		&_speaker
+			&__1
+				margin-top: 20px
+			&__2
+				margin-top: 20px
+				&__img
+					width: 100%
+			&__3
+				margin-top: 20px
+			&__4
+				margin-top: 20px
+			&__5
+				margin-top: 20px
+				margin-left: auto
+				width: 100%
+	// next talks
+	// hero
+	.hero
+		.edicao
+			&_item
+				margin: 10px 0px
+				.edicao_item-title
+					align-self: center
+	// hero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+@media (min-width: 2280px)
+	.intro_logo 
+		img
+			width: 185%
+			transform: translateX(-40%)
+	.intro_info__img 
+		img
+			width: 65%
+	.intro_info__text
+		width: 115%
+		font-size: 28px
+	.intro_turnbtn 
+		img
+			width: 180%
+	.intro_hint
+		bottom: 10%
+		font-size: 22px
+	.main-nav 
+		a
+			font-size: 22px
+
+
+@media (min-width: 2880px)
+	.intro_logo 
+		img
+			width: 200%
+			transform: translateX(-45%)
+	.intro_info__img 
+		img
+			width: 75%
+	.intro_info__text
+		width: 130%
+		font-size: 30px
+	.intro_turnbtn 
+		img
+			width: 200%
+	.intro_hint
+		bottom: 10%
+		font-size: 25px
+	.main-nav 
+		a
+			font-size: 26px
+@media (min-width: 4880px)
+	.intro_logo 
+		img
+			width: 300%
+			transform: translateX(-65%)
+	.intro_info__img 
+		img
+			width: 120%
+	.intro_info__text
+		width: 160%
+		font-size: 44px
+	.intro_turnbtn 
+		img
+			width: 320%
+	.intro_hint
+		bottom: 10%
+		font-size: 40px
+		padding: 50px
+		width: 800px
+	.main-nav 
+		a
+			font-size: 52px
+	.main_edicao
+		margin-top: 250px

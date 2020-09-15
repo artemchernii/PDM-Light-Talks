@@ -1,0 +1,50 @@
+@import "../_vars.sass"
+
+
+.main_edicao
+	margin-top: 120px
+	padding-bottom: 20px
+	.edicao
+		&_title
+			margin-left: 5%
+			font-size: 40px
+			text-transform: uppercase
+			color: $pink
+		&_subtitle
+			margin-left: 5%
+			color: $white
+			width: 60%
+			margin-bottom: 40px
+		&_video
+			text-align: center
+			margin: 20px 0
+			iframe
+				border-radius: 10px
+				box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+				width: 90%
+				height: 600px
+		&_images
+			padding: 0px 50px
+			display: grid
+			grid-gap: 20px
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		&_prev
+			position: absolute
+			transition: all .5s ease
+			left: -10%
+			top: 40%
+			&:hover
+				transform: scale(1.1) translateX(-15px)
+		&_next
+			position: absolute
+			transition: all .5s ease
+			right: -10%
+			top: 40%
+			&:hover
+				transform: scale(1.1) translateX(15px)
+
+
+.disabled
+	cursor: default
+	pointer-events: none
+

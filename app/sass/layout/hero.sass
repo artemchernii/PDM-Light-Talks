@@ -1,0 +1,133 @@
+@import "../_vars.sass"
+
+
+.hero
+	padding: 50px 0
+	&_2
+		margin-top: 100px
+		padding-bottom: 150px
+	.edicao
+		background-color: $blue
+		position: relative
+		padding: 50px
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+		&_right
+			margin-top: 150px
+			&-2
+				margin-top: 250px
+		&_arrow
+			position: absolute
+			top: 15px
+			right: 15px
+			img
+				transition: all .5s ease
+			&:hover
+				img
+					transform: scale(.8) translate(15px, -15px)
+		&_top
+			&__img
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-left: -35px
+				img
+					width: 25%
+					padding: 20px
+					padding-left: 0
+			&__title
+				line-height: 1.2
+				&-h2
+					font-family: $mosk
+					font-size: 40px
+					font-weight: bold
+					color: $white
+				&-h4
+					font-size: 15px
+					text-align: center
+					font-weight: bold
+					color: $text
+		&_item
+			margin: 20px 0
+			display: flex
+			&_1
+				.edicao_item-title
+					margin-top: 15px
+			&_11
+				.edicao_item-title
+					margin-top: 15px
+			&_left-11
+				.edicao_item-title
+					align-self: center
+			&_2
+				margin-top: -50px
+				.edicao_item-title
+					align-self: center
+				&-right
+					margin-top: 0
+					.edicao_item-title
+						align-self: center
+			&_22
+				margin-top: -50px
+				.edicao_item-title
+					align-self: center
+			&_3
+				margin-top: -50px
+				.edicao_item-title
+					align-self: flex-end
+			
+			&_33
+				margin-top: -50px
+				.edicao_item-title
+					align-self: center
+			
+			&_4
+				margin-top: -35px
+				.edicao_item-title
+					margin-bottom: 20px
+					align-self: flex-end
+			&_44
+				margin-top: -35px
+				.edicao_item-title
+					margin-bottom: 20px
+					align-self: center
+			&_5
+				margin-top: -50px
+				.edicao_item-title
+					margin-bottom: 10px
+					align-self: flex-end
+			&-right
+				text-align: right
+				justify-content: flex-end
+			&-img
+				&-bw
+					filter: grayscale(100%)
+					padding: 20px
+					&-1
+						transform: rotate(8deg)
+					&-2
+						transform: rotate(-9deg)
+					&-3 
+						transform: rotate(7deg)
+					&-4
+						transform: rotate(-5deg)
+					&-5
+						transform: rotate(3deg)
+				padding: 15px
+				width: 40%
+				img
+					width: 100%
+			&-title
+				width: 40%
+				line-height: 1.2
+				text-transform: uppercase
+				&--left
+					color: $yellow
+				&--right
+					color: $red
+				
+#edicao4_link, #edicao3_link, #edicao2_link, #edicao1_link
+	text-decoration: none
+	&:hover
+		.edicao_arrow
+			img
+				transform: scale(.8) translate(15px, -15px)

@@ -1,0 +1,84 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "layout/header.sass"
+@import "layout/navigation.sass"
+@import "layout/preloader.sass"
+@import "layout/intro.sass"
+@import "layout/nexttalks.sass"
+@import "layout/modals.sass"
+@import "layout/hero.sass"
+@import "layout/edicao.sass"
+
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $white
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+#indexbody
+	overflow-y: hidden
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.main
+	background-color: $blue
+	position: relative
+	&_next
+		margin-top: 80px
+		background-color: $pink
+	.yellow_bubble
+		width: 0px
+		height: 0px
+		background: $yellow
+		position: absolute
+		top: 15%
+		left: 30%
+		border-radius: 50%
+		z-index: 1
+		&_blow
+			animation: bubble 8s ease
+			animation-iteration-count: 1
+@keyframes bubble
+	0%
+		width: 0
+		height: 0
+		opacity: 0
+	1%
+		width: 1px
+		height: 1px
+		opacity: 1
+	100%
+		transform: scale(50000)
+		opacity: 1
+
+
+@import "media" // Always at the end
