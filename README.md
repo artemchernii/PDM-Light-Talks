@@ -6,7 +6,7 @@ $ npm install
 $ gulp
 ```
 ## Overview
-### Live link []()
+### Live link [https://pdmlighttalks.netlify.app/](https://pdmlighttalks.netlify.app/)
 ![gif](https://s8.gifyu.com/images/webdesign-02-lt.gif)
 ### Designer website [saramourasantos.com](https://saramourasantos.com)
 ![gif](https://s8.gifyu.com/images/lightTalks-05.gif)
